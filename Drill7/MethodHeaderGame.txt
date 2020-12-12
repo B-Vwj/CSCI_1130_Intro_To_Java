@@ -1,0 +1,412 @@
+//=====================================================
+
+Problem #1
+
+Problem Statement
+
+- You are given two Point vars: "p1" and "p2"
+- You are given an int "k"
+- Send the message "multiply" to the first point with the other point as a method parameter, and assign the result to a var named "p3" (var must be declared)
+- Now send "multiply" to "p3" but do not use a Point object as the method parameter (use another var you have available), and assign the result to a var named "p4" (var must be declared)
+
+Problem 1 Solution
+
+SOLUTION-HERE
+-------------
+
+// We are given "p1" and "p2", as well as int "k"
+
+// Declaring vars
+Point p3;
+Point p4;
+
+// Sending message to "p1" with "p2" as method parameter
+// Assign result to "p3"
+p3 = p1.multiply(p2);
+
+// Sending message to "p3" with "k" as method parameter
+// Assign result to "p4"
+p4 = p3.multiply(k);
+
+//=====================================================
+
+Problem #2
+
+Problem Statement
+
+- We are given a var named "elli" of type Ellipse
+- Send the message "drawOn" to the Ellipse object
+- Hint: you will need to declare and construct object(s) (use any var names you like for those)
+
+Problem 2 Solution
+
+SOLUTION-HERE
+-------------
+
+// We are given "elli"
+
+// Declare and construct object(s)
+Graphics graphics;
+Graphics = new Graphics();
+
+// Send message to Ellipse object
+elli.drawOn(graphics);
+
+//=====================================================
+
+Problem #3
+
+Problem Statement
+
+- We are given a var named "circ" of type Circle
+- Send the message "moveBy" to the Circle object
+- Hint: you will need to declare and construct object(s) (use any var names you like for those)
+
+Problem 3 Solution
+
+SOLUTION-HERE
+-------------
+
+// We're given "circ"
+
+// Declare and construct object
+Grid grid;
+Grid = new Grid();
+
+// Send message
+circ.moveBy(grid);
+
+//=====================================================
+
+Problem #4
+
+Problem Statement
+
+- You are given a var named "space" of type OuterSpace
+- You are given a var named "p" of type Point
+- Send a message (you choose message) to "space" and assign the return value to "p"
+
+Problem 4 Solution
+
+SOLUTION-HERE
+-------------
+ 
+// NO SOLUTION
+
+//=====================================================
+
+Problem #5
+
+Problem Statement
+
+- We are given a var named "space" of type SpaceObject
+- We are given a var named "image" of type ImageShape
+- Send the message "randomize" to "frame" 
+- You may send a message to "image" in order to get the parameter needed for the message "randomize"
+
+Problem 5 Solution
+
+SOLUTION-HERE
+
+
+
+
+
+
+//=====================================================
+
+Problem #6
+
+Problem Statement
+
+- You are given two vars: an "Ellipse" named "ellipse", and a "Frame" named "frame" 
+- Send a message to determine if "frame" contains "ellipse"
+- Assign the result to a var named "result" (var must be declared)
+- You may use the shape "boundaries" as a good enough estimate for the "contains" check
+- Hint: you will need to send a message to "ellipse" to get a value for the message send to frame
+
+Problem 6 Solution
+
+SOLUTION-HERE
+
+
+
+
+
+//=====================================================
+
+Problem #7
+
+Problem Statement
+
+- Given a var named "circ" of type "Circle"
+- Given a var named "ellipse" of type "Ellipse"
+- Determine if the "circ" and "ellipse" intersect and put the result in a var named "result" (var must be declared)
+- You may use the shape "boundaries" as a good enough estimate of intersection
+- Hint: You may want to declare a couple more vars for this problem (of a helpful type)
+
+Problem 7 Solution
+
+SOLUTION-HERE
+
+
+
+
+
+
+//=====================================================
+
+Problem #8
+
+Problem Statement
+
+- You are given a var named "fw" of type "ForwardIndicator"
+- You are given two vars "x" and "y" of type "int"
+- Send the message conformX to "fw" with the correct parameter and assign the result to a var "x2" (var must be declared)
+- Send the message conformY to "fw" with the correct parameter and assign the result to a var "y2" (var must be declared)
+- Construct a var "p" of type "Point" (var must be declared)
+- Send the appropriate messages to the var "p" so that you set the point's x and y with the "x2" and "y2" vars
+- Construct a var "elli" of type "Ellipse" (var must be declared)
+- Send the message "setAnchor" to "elli" using a var you have available
+- Send the message "setLongDimension" to "elli" using a value of your choice
+
+Problem 8 Solution
+
+SOLUTION-HERE
+-------------
+
+// Given vars "fw", "x", and "y"
+
+// Declare vars
+int x2, y2;
+
+// conformX
+x2 = fw.conformX(x);
+
+// conformY
+y2 = fw.conformY(y);
+
+// Construct var "p" of type "Point"
+Point p;
+p = new Point();
+
+// Send message to var "p" && set Point's x and y with the "x2" and "y2" vars
+p.setX(x2);
+p.setY(y2);
+
+// Construct var "elli" of type "Ellipse"
+Ellipse elli;
+elli = new Ellipse();
+
+// Send Message to var "elli"
+elli.setAnchor(fw);
+elli.setLongDimension(100);
+
+//=====================================================
+
+Problem #9
+
+Problem Statement
+
+- You are given a var named "frame" of type "Frame"
+- Construct a var named "leftTop" of type "Point" (var must be declared)
+- Set the x value in the Point var "leftTop" using the Frame's "left" value
+- Set the y value in the Point var "leftTop" using the Frame's "top" value
+
+Problem 9 Solution
+
+SOLUTION-HERE
+-------------
+
+// We're given:
+// Frame frame && frame = new Frame();
+
+// Construct var
+Point leftTop;
+leftTop = new Point();
+
+// Setting values
+leftTop.setX(frame.getleft());
+leftTop.setY(frame.getTop());
+
+
+//=====================================================
+
+Problem #10
+
+Problem Statement
+
+
+- Construct a var named "p" of type Point (var must be declared)
+- Set the x value of "p" to 123 by sending the appropriate message to "p"
+- Set the y value of "p" to 405 by sending the appropriate message to "p"
+- Then declare a var "niceString" of type String
+- Choose a message to send to "p" and assign the result to the var "niceString"
+
+Problem 10 Solution
+
+SOLUTION-HERE
+-------------
+
+// Construct var name "p" of type Point
+Point p;
+p = new Point();
+
+// Setting values
+p.setX(123);
+p.setY(405);
+
+// Declare new var
+String niceString;
+niceString = new String();
+
+// Sending message to "p"
+niceString = p.toString();
+
+//=====================================================
+
+Problem #11
+
+Problem Statement
+
+- You are given a var named "frame" of type "Frame"
+- Construct a var named "circ" of type "Circle" (var must be declared)
+- Send the message "setAnchor" to "circ" and for the param get the value from "frame" (sending message of your choice to it)
+- Send the message "setLongDimension" to "circ" and for the param get the value from "frame" (sending message of your choice to it)
+
+Problem 11 Solution
+
+SOLUTION-HERE
+-------------
+
+// Given:
+// Frame frame; && frame = new Frame();
+
+// Construct "circ"
+Circle circ;
+circ = new Circle();
+
+// Send "setAnchor" message
+circ.setAnchor(frame.contains());
+circ.setLongDimension(frame.contains());
+
+//=====================================================
+
+Problem #12
+
+Problem Statement
+
+- Assume you are given three vars: a "Circle", an "int", and a "Color"
+- List all of the methods that you could send to a "OuterSpace" object given the three vars (you may use zero to any number of these three vars [as-is] as parameters for any given message send -- you may not use one var multiple times in one message send)
+
+Problem 12 Solution
+
+SOLUTION-HERE
+-------------
+
+// Given "Circle", "int", and "Color"
+
+// List all methods
+getBoundary
+getAnchor
+setLongDimension
+moveBy
+setAnchor
+getLongDimension
+
+
+//=====================================================
+
+Problem #13
+
+Problem Statement
+
+- Assume you are given two vars: a var named "frame" (a Frame), and a var named "value" (an int). 
+- Show at least two message sends you could do. 
+- Both vars must be players in the message send (either the message receiver or parameters)
+- Do not worry about assigning the return value of any methods
+
+Problem 13 Solution
+
+SOLUTION-HERE
+-------------
+
+// Given: "frame" and "value" vars
+
+// Declare any extras
+
+Point p;
+P = new Point;
+
+boolean result;
+
+// First message
+
+result = frame.contains(value);
+
+// Second message
+
+frame.setTop(value);
+
+//=====================================================
+
+Problem #14
+
+Problem Statement
+
+- Given a var named "frame" of type "Frame"
+- Construct an Ellipse named "ellipse" (var must be declared)
+- Set the anchor of "ellipse" using any of the messages to "frame" that return have the appropriate return type
+- Set the longDimension of "ellipse" using any of the messages to "frame" that have the appropriate return type
+
+Problem 14 Solution
+
+SOLUTION-HERE
+
+
+
+
+
+
+
+
+//=====================================================
+
+Problem #15
+
+Problem Statement
+
+- Given a var named "space" of type "OuterSpace"
+- Given a var named "p" of type "Point"
+- Send a message to "space" that will set it's rate -- for the method parameters get values from "p".
+
+Problem 15 Solution
+
+SOLUTION-HERE
+
+
+
+
+
+
+
+//=====================================================
+
+Problem #16
+
+Problem Statement
+
+- We are given a var named "frame" of type Frame
+- We are given a var named "p" of type Point 
+- Send the message "containsY" to "frame" 
+- You may send a message to "p" in order to get the parameter for the message "containsY"
+
+Problem 16 Solution
+
+SOLUTION-HERE
+
+
+
+
+
+
